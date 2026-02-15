@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 AI Психолог</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <!-- Хедер -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">🧠</div>
+          <div class="logo-text">
+            <h1>AI Психолог</h1>
+            <span class="status">
+              <span class="status-dot"></span>
+              Онлайн — готов слушать
+            </span>
+          </div>
+        </div>
+        <button class="new-chat-btn" id="newChatBtn" title="Новый разговор">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          <span>Новый чат</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Зона чата -->
+    <main class="chat-container" id="chatContainer">
+      <!-- Приветственный экран -->
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">🧠</div>
+        <h2>Привет. Я твой AI-психолог.</h2>
+        <p>Я здесь, чтобы слушать, понимать и помогать разобраться в том, что происходит внутри. 
+           Всё, что ты расскажешь, останется между нами.</p>
+        <div class="quick-topics">
+          <button class="topic-btn" data-msg="Я чувствую тревогу и не могу понять почему">
+            😰 Тревога
+          </button>
+          <button class="topic-btn" data-msg="У меня проблемы в отношениях">
+            💔 Отношения
+          </button>
+          <button class="topic-btn" data-msg="Я чувствую, что выгорел на работе">
+            🔥 Выгорание
+          </button>
+          <button class="topic-btn" data-msg="Мне трудно принять важное решение">
+            🤔 Решения
+          </button>
+          <button class="topic-btn" data-msg="Я часто чувствую себя одиноким">
+            🌧️ Одиночество
+          </button>
+          <button class="topic-btn" data-msg="Мне сложно справляться с эмоциями">
+            🌊 Эмоции
+          </button>
+        </div>
+      </div>
+
+      <!-- Сообщения -->
+      <div class="messages" id="messages"></div>
+    </main>
+
+    <!-- Поле ввода -->
+    <footer class="input-area">
+      <div class="input-container">
+        <textarea 
+          id="messageInput" 
+          placeholder="Расскажи, что у тебя на душе..." 
+          rows="1"
+          maxlength="4000"
+        ></textarea>
+        <button id="sendBtn" class="send-btn" disabled>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+          </svg>
+        </button>
+      </div>
+      <p class="disclaimer">
+        AI-психолог — не замена профессиональной помощи. 
+        В кризисной ситуации звони: <a href="tel:88002000122">8-800-2000-122</a> (бесплатно, 24/7)
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
