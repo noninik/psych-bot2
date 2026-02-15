@@ -1,9 +1,0 @@
-body { font-family: Arial, sans-serif; margin: 2rem; background:#f5f5f5; }
-#chat { max-width: 600px; margin: auto; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.1); }
-#messages { height:400px; overflow-y:auto; margin-bottom:1rem; }
-.message { padding:.5rem; border-radius:4px; margin: .5rem 0; }
-.user { background:#e0f7fa; text-align:right; }
-.bot { background:#fff9c4; }
-form { display:flex; }
-input { flex:1; padding:.5rem; font-size:1rem; }
-button { padding:.5rem 1rem; font-size:1rem; }
